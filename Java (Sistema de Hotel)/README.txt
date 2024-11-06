@@ -1,0 +1,1 @@
+Para ejecutar directamente las aplicaciones, necesita tener instalado Java con Apache Netbeans.

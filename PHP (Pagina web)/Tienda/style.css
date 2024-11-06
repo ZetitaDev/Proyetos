@@ -1,0 +1,134 @@
+body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    h2 {
+        text-align: center;
+        color: #36a8d4;
+        font-size: 24px;
+    }
+
+    form {
+        background-color: #ffffff;
+        padding: 20px;
+        margin: 20px auto;
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+        display: block;
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 8px;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    input[type="submit"] {
+        background-color: #36a8d4;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #1e56a0;
+    }
+
+    table {
+        width: 80%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    table, th, td {
+        border: 1px solid #ddd;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: center;
+    }
+
+    th {
+        background-color: #36a8d4;
+        color: white;
+    }
+
+    td {
+        background-color: #f9f9f9;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    p {
+        text-align: center;
+        font-size: 16px;
+        color: #333;
+    }
+
+    .button-container {
+        text-align: center;
+        margin: 20px;
+    }
+    
+    .button-container a {
+        margin: 0 5px;
+        text-decoration: none;
+        color: #36a8d4;
+        font-weight: bold;
+    }
+    
+    .button-container a:hover {
+        color: #1e56a0;
+    }
+    
+    .button-container strong {
+        color: #1e56a0;
+        font-size: 1.1em;
+    }
+    
+    .add-button {
+        display: inline-block;
+        color: white;
+        background-color: #36a8d4;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+    
+    .add-button i {
+        margin-right: 5px;
+    }
+    
+    table td a {
+        margin: 0 5px;
+        color: #36a8d4;
+        font-size: 1.2em;
+    }
+    
+    table td a:hover {
+        color: #2980b9;
+    }
+    

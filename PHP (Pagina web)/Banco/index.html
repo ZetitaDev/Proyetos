@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apertura de Cuenta</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <div class="white-space"></div>
+        <div class="header-bar">
+            <div class="header-container">
+                <img src="WhatsApp Image 2024-10-10 at 7.12.35 AM.jpeg" alt="Logo" height="60px">
+                <div class="line"></div>
+                <div class="bank-title">
+                    <h1>Apertura de Cuenta</h1>
+                </div>
+            </div>
+        </div>
+
+        <form action="enviar_formulario.php" method="POST">
+            <div class="form-group nombre-apellido">
+                <div class="form-column">
+                    <label for="first_name">Nombre</label>
+                    <input type="text" id="first_name" name="nombre" placeholder="Nombre" required>
+                </div>
+                <div class="form-column">
+                    <label for="last_name">Apellido</label>
+                    <input type="text" id="last_name" name="apellido" placeholder="Apellido" required>
+                </div>
+            </div>
+
+            <div class="form-group email-telefono">
+                <div class="form-column">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="correo" placeholder="micorreo@ejemplo.com" required>
+                </div>
+                <div class="form-column">
+                    <label for="phone_number">Número de Teléfono</label>
+                    <input type="tel" id="phone_number" name="telefono" placeholder="(000) 000-000" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="street_address">Dirección</label>
+                <input type="text" id="street_address" name="direccion" placeholder="Calle y Número" required>
+                <input type="text" id="street_address2" name="direccion2" placeholder="Calle Línea 2">
+            </div>
+
+            <div class="form-group ciudad-provincia">
+                <div class="form-column">
+                    <input type="text" id="city" name="ciudad" placeholder="Ciudad" required>
+                </div>
+                <div class="form-column">
+                    <input type="text" id="state" name="estado" placeholder="Estado / Provincia" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input type="text" id="zip_code" name="codigo_postal" placeholder="Código Postal" required>
+            </div>
+
+            <div class="form-group">
+                <label>¿Usted es dueño o alquila su casa?</label>
+                <div class="left-radio-group">
+                    <input type="radio" id="own" name="estado_casa" value="Dueño" required>
+                    <label for="own">Dueño</label>
+                </div>
+                <div class="center-radio-group">
+                    <input type="radio" id="rent" name="estado_casa" value="Alquila" required>
+                    <label for="rent">Alquila</label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>¿Necesita vender su casa antes de comprar una nueva?</label>
+                <div class="left-radio-group">
+                    <input type="radio" id="sell_yes" name="necesita_vender" value="Sí" required>
+                    <label for="sell_yes">Sí</label>
+                </div>
+                <div class="center-radio-group">
+                    <input type="radio" id="sell_no" name="necesita_vender" value="No" required>
+                    <label for="sell_no">No</label>
+                </div>
+            </div>
+            
+
+            <div class="form-group">
+                <label for="comments">Comentarios o preguntas:</label>
+                <textarea id="comments" name="comentarios" placeholder="Escriba aquí"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

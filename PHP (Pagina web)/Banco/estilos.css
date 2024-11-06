@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+label{
+    color: white;
+}
+
+.line {
+    position: absolute; /* Permite posicionar la línea donde quieras dentro del contenedor */
+    top: 50px; /* Ajusta esto según necesites */
+    left: 550px; /* Ajusta esto para centrar la línea en el contenedor */
+    transform: translateX(-50%); /* Centra la línea en su posición */
+    width: 2px; /* Ancho de la línea */
+    height: 100px; /* Altura de la línea */
+    background-color: #35303088; /* Color de la línea */
+}
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #087bd8;
+    padding: 0;
+    border-radius: 8px;
+    color: #333;
+    overflow: hidden; /* Para manejar mejor el borde del contenedor */
+}
+
+.white-space {
+    height: 30px;
+    background-color: #087bd8;
+}
+
+.header-bar {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo-placeholder {
+    width: 60px;
+    height: 60px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 10px; /* Espacio entre el logo y el título */
+}
+
+.bank-title{
+    font-size: 20px;
+    margin: 0;
+    color: #000000;
+    text-size-adjust: 50px;
+}
+
+.header-right {
+    text-align: right;
+}
+
+.header-right h2 {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0;
+    color: #fff;
+    text-align: right;
+}
+
+.header-right h2 span {
+    font-style: italic;
+}
+
+/* Estilo del formulario */
+.form-group {
+    padding: 10px; /* Reduce el padding */
+    margin-bottom: 8px; /* Reduce el margen inferior */
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 4px; /* Reduce el margen inferior del label */
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px; /* Reduce el padding */
+    margin-bottom: 8px; /* Reduce el margen inferior */
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+input[type="radio"] {
+    appearance: none;
+    width: auto;
+    margin-right: 10px;
+    border-radius: 0;
+}
+
+input[type="radio"] {
+    appearance: none; /* Quita el estilo predeterminado */
+    width: 20px; /* Ajusta el ancho */
+    height: 20px; /* Ajusta la altura */
+    border-radius: 0%; /* Para que sea un círculo */
+    border: 2px solid #ccc; /* Color del borde */
+    outline: none; /* Quita el contorno */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    position: relative; /* Para colocar el pseudo-elemento correctamente */
+}
+
+input[type="radio"]:checked {
+    background-color: #033810; /* Color de fondo cuando está seleccionado */
+}
+
+input[type="radio"]:checked::before {
+    content: ''; /* Crea un pseudo-elemento */
+    display: block;
+
+    background-color: #ffffff; /* Color del círculo interno */
+    border-radius: 50%; /* Círculo */
+    position: absolute; /* Posición relativa al radio */
+    top: 4px; /* Ajusta esto para centrar verticalmente */
+    left: 4px; /* Ajusta esto para centrar horizontalmente */
+    transition: opacity 0.2s ease; /* Transición suave */
+}
+
+.radio-group {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    gap: 10px; /* Espacio entre las opciones de radio */
+}
+
+/* Estilos para la opción "Dueño" y "Sí" */
+.left-radio-group {
+    position: relative;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    gap: 10px; /* Espacio entre las opciones de radio */
+    top: 25px;
+}
+
+/* Estilos para la opción "Alquila" y "No" */
+.center-radio-group {
+    position: relative;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    gap: 10px; /* Espacio entre las opciones de radio */
+}
+textarea {
+    height: 80px; /* Reduce la altura del textarea */
+}
+
+button {
+    background-color: #232a80;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #01036b;
+}
+
+/* Estilos para poner los campos de nombre y apellido uno al lado del otro */
+.nombre-apellido {
+    display: flex;
+    justify-content: space-between; /* Cambia esto para llenar el espacio disponible */
+    align-items: center; /* Centra verticalmente */
+    gap: 15px; /* Reduce el espacio entre nombre y apellido */
+}
+
+.nombre-apellido > div {
+    flex: 1; /* Hace que los campos ocupen todo el ancho disponible */
+}
+
+/* Estilos para poner los campos de correo y teléfono uno al lado del otro */
+.email-telefono {
+    display: flex;
+    justify-content: space-between; /* Cambia esto para llenar el espacio disponible */
+    align-items: center; /* Centra verticalmente */
+    gap: 15px; /* Reduce el espacio entre correo y teléfono */
+}
+
+.email-telefono > div {
+    flex: 1; /* Hace que los campos ocupen todo el ancho disponible */
+}
+
+/* Estilos para poner los campos de ciudad y provincia uno al lado del otro */
+.ciudad-provincia {
+    display: flex;
+    justify-content: space-between; /* Cambia esto para llenar el espacio disponible */
+    align-items: center; /* Centra verticalmente */
+    gap: 15px; /* Reduce el espacio entre ciudad y provincia */
+}
+
+.ciudad-provincia > div {
+    flex: 1; /* Hace que los campos ocupen todo el ancho disponible */
+}

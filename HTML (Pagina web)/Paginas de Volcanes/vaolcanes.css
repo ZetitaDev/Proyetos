@@ -1,0 +1,27 @@
+#imagen1
+{
+    float: left;
+}
+
+p{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body
+{
+    background-color:#F75000;
+}
+
+h2{
+    text-align: center;
+}
+
+button{
+
+background-color:#;
+font-size: 3ch;
+border:none;
+padding: 20px;
+
+}

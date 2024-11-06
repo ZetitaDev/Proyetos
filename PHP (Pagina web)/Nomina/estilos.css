@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8f5;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #3a7d44;
+}
+
+form {
+    background-color: #ffffe0;
+    border: 2px solid #3a7d44;
+    border-radius: 10px;
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: #3a7d44;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="number"], select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #3a7d44;
+    border-radius: 5px;
+    background-color: #f0fff0; /* Verde claro */
+}
+
+input[type="submit"], input[type="reset"], button {
+    background-color: #3a7d44;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover, button:hover {
+    background-color: #2f6c37;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.button-container span {
+    margin-left: 20px;
+    color: green;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #e0f7e0;
+    border: 2px solid #d9d900;
+}
+
+table, th, td {
+    border: 1px solid #d9d900;
+    text-align: center;
+}
+
+th {
+    background-color: #d9d900;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+/* Contenedor para centrar el botón */
+.btn-container {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    margin-top: 20px; /* Espacio superior */
+}
+
+/* Estilo del botón */
+.btn-regresar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Color verde */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-regresar:hover {
+    background-color: #45a049; /* Un tono más oscuro cuando se pasa el ratón */
+}
+
+td:nth-child(3) {
+    white-space: nowrap;
+    width: 150px;
+    max-width: 200px;
+}

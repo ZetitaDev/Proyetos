@@ -1,0 +1,183 @@
+body{
+    background-color:goldenrod;
+    min-height: 100vh;
+}
+
+.circulo1{
+width: 250px;
+height: 250px;
+background:green;
+border-radius: 90%;
+position: absolute;
+top: 130px;
+left: 630px;
+z-index: 4;
+}
+
+.circulo2{
+width: 250px;
+height: 250px;
+background:rgb(255, 0, 0);
+border-radius: 90%;
+position: absolute;
+top: 130px;
+left: 390px;
+z-index: 5;
+}
+
+.triangulo1{
+    width: 0px;
+    height: 0px;
+    border-top: 350px solid rosybrown;
+    border-left: 250px solid transparent;
+    border-right: 250px solid transparent;
+    border-bottom: 350px solid transparent;
+    border-radius: 30%;
+    position: absolute;
+    top: 270px;
+    left: 380px;
+    z-index: 1;
+}
+
+.cuadrado1{
+    width: 200px;
+    height: 200px;
+    border-radius: 30%;
+    background: white;
+    transform: rotate(35deg);
+    position: absolute;
+    top: 280px;
+    left: 590px;
+    z-index: 3;
+}
+
+.cuadrado2{
+    width: 230px;
+    height: 210px;
+    border-radius: 30%;
+    background: yellow;
+    transform: rotate(55deg);
+    position: absolute;
+    top: 260px;
+    left: 450px;
+    z-index: 3;
+}
+
+.pieza1{
+    width: 50px;
+    height: 50px;
+    border-radius: 90%;
+    background: green;
+    position: absolute;
+    top: 350px;
+    left: 720px;
+    z-index: 3;
+}
+
+.pieza2{
+    width: 50px;
+    height: 50px;
+    border-radius: 90%;
+    background: rgb(255, 0, 0);
+    position: absolute;
+    top: 230px;
+    left: 620px;
+    z-index: 4;
+}
+
+.pieza3{
+    width: 50px;
+    height: 50px;
+    border-radius: 90%;
+    background: rosybrown;
+    position: absolute;
+    top: 460px;
+    left: 560px;
+    z-index: 4;
+}
+
+.pieza4{
+    width: 50px;
+    height: 50px;
+    border-radius: 90%;
+    background: white;
+    position: absolute;
+    top: 460px;
+    left: 640px;
+    z-index: 3;
+}
+
+.pieza5{
+    width: 50px;
+    height: 50px;
+    border-radius: 90%;
+    background: yellow;
+    position: absolute;
+    top: 340px;
+    left: 510px;
+    z-index: 6;
+}
+
+.amor{
+    font-size: 75px;
+    position: absolute;
+    top: 130px;
+    left: 420px;
+    z-index: 6;
+}
+
+.tolerancia{
+    font-size: 40px;
+    position: absolute;
+    top: 190px;
+    left: 680px;
+    z-index: 6;
+}
+
+.compañerismo{
+    font-size: 30px;
+    position: absolute;
+    top: 360px;
+    left: 490px;
+    z-index: 6;
+}
+
+.paz{
+    font-size: 40px;
+    position: absolute;
+    top: 380px;
+    left: 690px;
+    z-index: 6;
+}
+
+.solidaridad{
+    font-size: 20px;
+    position: absolute;
+    top: 500px;
+    left: 580px;
+    z-index: 6;
+}
+
+.modal-bg {
+    display: none;
+    position: fixed;
+    top: 200px;
+    left: 450px;
+    width: 30%;
+    height: 30%;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    border-radius: 5%;
+}
+
+.boton-cerrar {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
